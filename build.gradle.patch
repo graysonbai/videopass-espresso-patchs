@@ -1,0 +1,11 @@
+--- build.gradle	2020-12-08 12:52:28.000000000 +0800
++++ sbuild.gradle	2020-12-08 13:46:03.000000000 +0800
+@@ -319,7 +319,7 @@
+     if (branch.startsWith("master")) {
+         return "master"
+     } else {
+-        return branch
++        return "pre-release"
+     }
+ }
+ 
