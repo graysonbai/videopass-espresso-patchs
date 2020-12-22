@@ -1,0 +1,21 @@
+--- TelasaUtil.java	2020-12-22 14:12:15.000000000 +0800
++++ TelasaUtils.java	2020-12-22 14:17:30.000000000 +0800
+@@ -33,7 +33,7 @@
+ import com.kddi.android.videopass.activity.MainActivity;
+ import com.kddi.android.videopass.uiautomation.common.exceptions.BasicException;
+ import com.kddi.android.videopass.uiautomation.common.exceptions.NotReadyException;
+-import com.squareup.spoon.SpoonRule;
++import com.squareup.spoon.Spoon;
+ 
+ 
+ import org.hamcrest.Description;
+@@ -344,8 +344,7 @@
+             return ;
+         }
+         TelasaUtil.dprint( "takeScreenShot: " + tag ) ;
+-        SpoonRule spoon = new SpoonRule();
+-        spoon.screenshot( TelasaUtil.getCurrentActivity(), tag ) ;
++        Spoon.screenshot( TelasaUtil.getCurrentActivity(), tag ) ;
+     }
+ 
+     // copied from google

@@ -1,5 +1,5 @@
---- build.gradle	2020-12-08 12:52:28.000000000 +0800
-+++ sbuild.gradle	2020-12-08 13:46:03.000000000 +0800
+--- build.gradle	2020-12-22 18:35:14.000000000 +0800
++++ build.gradles	2020-12-22 18:40:54.000000000 +0800
 @@ -319,7 +319,7 @@
      if (branch.startsWith("master")) {
          return "master"
@@ -9,3 +9,12 @@
      }
  }
  
+@@ -433,7 +433,7 @@
+     }
+     androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.2.0'
+     // For Spoon snapshot, until 2.0.0 is released
+-    androidTestImplementation "com.squareup.spoon:spoon-client:2.0.0-SNAPSHOT"
++    androidTestImplementation "com.squareup.spoon:spoon-client:1.7.0"
+     // Kotlin
+     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
